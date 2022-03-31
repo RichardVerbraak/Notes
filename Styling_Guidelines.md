@@ -8,7 +8,8 @@ Small course on some design guidelines: https://www.udemy.com/course/web-design-
 
 When picking a design for a website you should consider the psychology behind them.
 
-1. **Red** --- Power, passion, excitement and strength.
+1. **Red**
+   Power, passion, excitement and strength.
 
 2. **Orange** --- Cheerfulness, creativity, draws a lot of attention.
 
@@ -49,10 +50,36 @@ Adding a bit of _opacity_ to that color so the image shines through is also a go
 
 #### Floor fade
 
-A floor fade is if you're planning to add text to the bottom of the image because a floor fade is just overlaying the bottom of the image with some color instead of the entire background.
+A floor fade is if you're planning to add text to the bottom of the image because a floor fade is just overlaying the bottom of the image with some a dark color instead of the entire background.
 
 ======================================================
 
 ### Drawing attention to the background
 
 Adding animations like scaling the image with ease-in ease-out transformations.
+
+## Icons
+
+Icons can quickly guide your users to where they want to be.
+
+They can also help your users identify what it is they're reading about.
+
+Icons are really useful in navigations (dropdown lists etc.) and links or used in cards with descriptions.
+
+### General tips on Icons
+
+1. Icons should be recognizable.
+
+2. Label your icons to avoid confusion.
+
+3. Icons should not take the center stage, they are a supporting role.
+
+4. Use SVGs whenever possible instead of a static image. SVGs are scaleable in terms of quality.
+
+## Whitespace
+
+Whitespace allows your design to "breathe".
+
+Little whitespace is unreadable and doesn't separate content as nicely.
+
+Too much whitespace and the user won't know the relationship between one part of content and another.
