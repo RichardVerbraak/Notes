@@ -8,7 +8,7 @@ Small course on some design guidelines: https://www.udemy.com/course/web-design-
 
 When picking a design for a website you should consider the psychology behind them.
 
-1.  **Red**
+1.  <span style="color:red">**Red**</span>
 
         Power, passion, excitement and strength.
 
