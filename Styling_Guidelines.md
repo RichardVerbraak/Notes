@@ -1,7 +1,8 @@
 # Simple guidelines to create a beautiful looking website
 
 Most of the guidelines here are either things I've learned myself and from various CSS courses from Jonas Schmedtmann.
-Small guideline course: https://www.udemy.com/course/web-design-secrets/learn/lecture/2744018
+
+Small course on some design guidelines: https://www.udemy.com/course/web-design-secrets/learn/lecture/2744018
 
 ## Colours
 
@@ -34,6 +35,8 @@ There are a few ways to achieve readable text overlayed on an image.
 
 ### Text & Backgrounds
 
+======================================================
+
 #### Overlay the image with color
 
 Adding a bit of color over any image can make your text stand out more. Preferably this color should be one of your base colors.
@@ -47,6 +50,8 @@ Adding a bit of _opacity_ to that color so the image shines through is also a go
 #### Floor fade
 
 A floor fade is if you're planning to add text to the bottom of the image because a floor fade is just overlaying the bottom of the image with some color instead of the entire background.
+
+======================================================
 
 ### Drawing attention to the background
 
