@@ -12,6 +12,8 @@ When picking a design for a website you should consider the psychology behind th
 
         Power, passion, excitement and strength.
 
+        <span style="color:blue">some *blue* text</span>
+
 2.  **Orange**
 
         Cheerfulness, creativity, draws a lot of attention.
