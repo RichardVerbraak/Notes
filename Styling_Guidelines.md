@@ -4,6 +4,10 @@ Most of the guidelines here are either things I've learned myself and from vario
 
 Small course on some design guidelines: https://www.udemy.com/course/web-design-secrets/learn/lecture/2744018
 
+## Typography
+
+    Contrast with background. Minimal. Legible. Max 3 different fonts in max 3 different sizes.
+
 ## Colours
 
 When picking a design for a website you should consider the psychology behind them.
@@ -41,6 +45,19 @@ When picking a design for a website you should consider the psychology behind th
         Relaxation, confidence, earthiness, durability, comfort.
 
 **!!!IMPORTANT!!!** _Never_ pick black as a color. It's not a natural color that you'll encounter in the real world either.
+
+======================================================
+
+### General tips
+
+1.  **Don't use too many colors**
+
+        Pick at most five colors maximum to create better consistency in your design. More on that below.
+
+2.  **Consistency with colors**
+
+        Having too many random colors breaks the design. In my opinion, you should pick two primary colors
+        and have lighter shades of your base colors to use for less important content or text to create visual consistency.
 
 ## Images
 
@@ -104,16 +121,18 @@ Too much whitespace and the user won't know the relationship between one part of
 
 This is used to separate the _most_ important content on your page from the _least_ important content. Defining visual hierarchy is done by following the next guidelines
 
-1.  Establish where your audience should look first
+1.  **Establish where your audience should look first**
 
-        As an example, having a bright orange subscriptiopn button in the main header of your Blog page to accumulate more followers.
+        As an example, having a bright orange CTA button in the main header of your Blog page to get people to subscribe to your posts.
 
         Changing to a smaller font family / size / weight for less important content.
 
-2.  Define a flow that corresponds to your website's message
+2.  **Define a flow that corresponds to your website's message**
 
         This is used to guide a user from one piece of content to the next.
 
-3.  Use whitespace to build said flow
+3.  **Use whitespace to build said flow**
 
         Whitespace if done right makes the content easier to digest for the user
+
+## Aligment
