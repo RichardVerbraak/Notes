@@ -3,8 +3,6 @@
 Most of the guidelines here are either things I've learned myself and from various CSS courses from Jonas Schmedtmann.
 Small guideline course: https://www.udemy.com/course/web-design-secrets/learn/lecture/2744018
 
-=========================================================
-
 ## Colours
 
 When picking a design for a website you should consider the psychology behind them.
