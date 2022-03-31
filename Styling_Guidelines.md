@@ -18,31 +18,31 @@ When picking a design for a website you should consider the psychology behind th
 
 2.  **Orange**
 
-        Cheerfulness, creativity, draws a lot of attention.
+    - Cheerfulness, creativity, draws a lot of attention.
 
 3.  **Yellow**
 
-        Energetic, happiness, liveliness.
+    - Energetic, happiness, liveliness.
 
 4.  **Green**
 
-        Harmony, nature, life and health, also, money.
+    - Harmony, nature, life and health, also, money.
 
 5.  **Blue**
 
-        Patience, trust, professionalism, calm and coolness.
+    - Patience, trust, professionalism, calm and coolness.
 
 6.  **Purple**
 
-        Nobility, luxury, wisdom and mystery
+    - Nobility, luxury, wisdom and mystery
 
 7.  **Pink**
 
-        Romance, care, affection, peace.
+    - Romance, care, affection, peace.
 
 8.  **Brown**
 
-        Relaxation, confidence, earthiness, durability, comfort.
+    - Relaxation, confidence, earthiness, durability, comfort.
 
 **!!!IMPORTANT!!!** _Never_ pick black as a color. It's not a natural color that you'll encounter in the real world either.
 
@@ -52,12 +52,13 @@ When picking a design for a website you should consider the psychology behind th
 
 1.  **Don't use too many colors**
 
-        Pick at most five colors maximum to create better consistency in your design. More on that below.
+    - Pick at most five colors maximum to create better consistency in your design. More on that below.
 
 2.  **Consistency with colors**
 
-        Having too many random colors breaks the design. In my opinion, you should pick two primary colors
-        and have lighter shades of your base colors to use for less important content or text to create visual consistency.
+    - Having too many random colors breaks the design.
+      In my opinion, you should pick two primary colors
+      and have lighter shades of your base colors to use for less important content or text to create visual consistency.
 
 ## Images
 
@@ -123,16 +124,16 @@ This is used to separate the _most_ important content on your page from the _lea
 
 1.  **Establish where your audience should look first**
 
-        As an example, having a bright orange CTA button in the main header of your Blog page to get people to subscribe to your posts.
+    - As an example, having a bright orange CTA button in the main header of your Blog page to get people to subscribe to your posts.
 
-        Changing to a smaller font family / size / weight for less important content.
+      Changing to a smaller font family / size / weight for less important content.
 
 2.  **Define a flow that corresponds to your website's message**
 
-        This is used to guide a user from one piece of content to the next.
+    - This is used to guide a user from one piece of content to the next.
 
 3.  **Use whitespace to build said flow**
 
-        Whitespace if done right makes the content easier to digest for the user
+    - Whitespace if done right makes the content easier to digest for the user
 
 ## Aligment
