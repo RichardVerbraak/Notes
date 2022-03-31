@@ -99,3 +99,21 @@ Whitespace allows your design to "breathe".
 Little whitespace is unreadable and doesn't separate content as nicely.
 
 Too much whitespace and the user won't know the relationship between one part of content and another.
+
+## Visual Hierarchy
+
+This is used to separate the _most_ important content on your page from the _least_ important content. Defining visual hierarchy is done by following the next guidelines
+
+1.  Establish where your audience should look first
+
+        As an example, having a bright orange subscriptiopn button in the main header of your Blog page to accumulate more followers.
+
+        Changing to a smaller font family / size / weight for less important content.
+
+2.  Define a flow that corresponds to your website's message
+
+        This is used to guide a user from one piece of content to the next.
+
+3.  Use whitespace to build said flow
+
+        Whitespace if done right makes the content easier to digest for the user
