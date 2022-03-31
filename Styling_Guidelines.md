@@ -40,7 +40,7 @@ When picking a design for a website you should consider the psychology behind th
 
         Relaxation, confidence, earthiness, durability, comfort.
 
-**!IMPORTANT!**: _Never_ pick black as a color. It's not a natural color that you'll encounter in the real world either.
+**!!!IMPORTANT!!!** _Never_ pick black as a color. It's not a natural color that you'll encounter in the real world either.
 
 ## Images
 
@@ -65,7 +65,8 @@ Adding a bit of _opacity_ to that color so the image shines through is also a go
 
 #### Floor fade
 
-A floor fade is if you're planning to add text to the bottom of the image because a floor fade is just overlaying the bottom of the image with some a dark color instead of the entire background.
+A floor fade is if you're planning to add text to the bottom of the image because a floor fade is just overlaying the bottom of the image with a
+_dark color_ instead of the entire background.
 
 ======================================================
 
@@ -75,7 +76,7 @@ Adding animations like scaling the image with ease-in ease-out transformations.
 
 ## Icons
 
-Icons can quickly guide your users to where they want to be.
+Icons can quickly _guide your users_ to where they want to be.
 
 They can also help your users identify what it is they're reading about.
 
@@ -83,13 +84,13 @@ Icons are really useful in navigations (dropdown lists etc.) and links or used i
 
 ### General tips on Icons
 
-1. Icons should be recognizable.
+1. Icons should be _recognizable_.
 
 2. Label your icons to avoid confusion.
 
-3. Icons should not take the center stage, they are a supporting role.
+3. Icons should **not** take the center stage, they are a supporting role.
 
-4. Use SVGs whenever possible instead of a static image. SVGs are scaleable in terms of quality.
+4. Use _SVGs_ whenever possible instead of a static image. SVGs are scaleable in terms of quality.
 
 ## Whitespace
 
