@@ -27,8 +27,6 @@ When picking a design for a website you should consider the psychology behind th
 
 **!IMPORTANT!**: _Never_ pick black as a color. It's not a natural color that you'll encounter in the real world either.
 
-=========================================================
-
 ## Images
 
 When working with images and text you should consider your site's primary colors and
