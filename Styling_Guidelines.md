@@ -9,10 +9,11 @@ Small course on some design guidelines: https://www.udemy.com/course/web-design-
 When picking a design for a website you should consider the psychology behind them.
 
 1.  <span style="color:red">**Red**</span>
+    <span style="color:blue">some _blue_ text</span>
 
-        Power, passion, excitement and strength.
+            Power, passion, excitement and strength.
 
-        <span style="color:blue">some *blue* text</span>
+
 
 2.  **Orange**
 
