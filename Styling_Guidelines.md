@@ -106,9 +106,9 @@ This is used to separate the _most_ important content on your page from the _lea
 
 1.  Establish where your audience should look first
 
-        As an example, having a bright orange subscriptiopn button in the main header of your Blog page to accumulate more followers.
+    As an example, having a bright orange subscriptiopn button in the main header of your Blog page to accumulate more followers.
 
-        Changing to a smaller font family / size / weight for less important content.
+    Changing to a smaller font family / size / weight for less important content.
 
 2.  Define a flow that corresponds to your website's message
 
