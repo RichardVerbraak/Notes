@@ -14,7 +14,7 @@ When picking a design for a website you should consider the psychology behind th
 
 1.  **Red**
 
-        Power, passion, excitement and strength.
+    - Power, passion, excitement and strength.
 
 2.  **Orange**
 
