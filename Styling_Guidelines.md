@@ -9,6 +9,7 @@ Small course on some design guidelines: https://www.udemy.com/course/web-design-
 When picking a design for a website you should consider the psychology behind them.
 
 1. **Red**
+
    Power, passion, excitement and strength.
 
 2. **Orange** --- Cheerfulness, creativity, draws a lot of attention.
