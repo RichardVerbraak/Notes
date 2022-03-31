@@ -8,23 +8,37 @@ Small course on some design guidelines: https://www.udemy.com/course/web-design-
 
 When picking a design for a website you should consider the psychology behind them.
 
-1. **Red**
+1.  **Red**
 
-   Power, passion, excitement and strength.
+        Power, passion, excitement and strength.
 
-2. **Orange** --- Cheerfulness, creativity, draws a lot of attention.
+2.  **Orange**
 
-3. **Yellow** --- Energetic, happiness, liveliness.
+        Cheerfulness, creativity, draws a lot of attention.
 
-4. **Green** --- Harmony, nature, life and health, also, money.
+3.  **Yellow**
 
-5. **Blue** --- Patience, trust, professionalism, calm and coolness.
+        Energetic, happiness, liveliness.
 
-6. **Purple** --- Nobility, luxury, wisdom and mystery
+4.  **Green**
 
-7. **Pink** --- Romance, care, affection, peace.
+        Harmony, nature, life and health, also, money.
 
-8. **Brown** --- Relaxtion, confidence, earthiness, durability, comfort.
+5.  **Blue**
+
+        Patience, trust, professionalism, calm and coolness.
+
+6.  **Purple**
+
+        Nobility, luxury, wisdom and mystery
+
+7.  **Pink**
+
+        Romance, care, affection, peace.
+
+8.  **Brown**
+
+        Relaxation, confidence, earthiness, durability, comfort.
 
 **!IMPORTANT!**: _Never_ pick black as a color. It's not a natural color that you'll encounter in the real world either.
 
