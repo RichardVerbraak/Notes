@@ -48,9 +48,11 @@ const shippingTax = (tax) => {
     return taxRate
 }
 
-// Set tax30 to the inner function (taxRate) and close over the tax variable from the outer scope
+// Run the shippingTax function which sets the tax variable inside taxRate to 30
+// Taxrate closes over the tax variable from the outer scope and is returned and thus assigned to tax30
 const tax30 = shippingTax(30)
 
+// tax30 is now the taxRate function
 // Calls taxRate with the amount which will return the amount - the fixed tax rate of 30
 tax30(500)
 
