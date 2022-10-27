@@ -10,6 +10,7 @@ For now just some scrambled notes, will reformat later.
 
 - Growth is with respect to the input
 - Drop constants
+- Worst case is how you _usually_ start to measure
 
 Big O notation is a generalized way of understanding how your algorithm will react to your input
 Another way of saying Big O is:
@@ -22,7 +23,7 @@ We use Big O to help decide which data structure and algorithm to use since we c
 
 ---
 
-#### O(n) example
+#### Growth is with respect to input
 
 The below code scales linearly because the for loop has to loop through the length of the string
 So if the string grows by 50% that would mean our function slows by 50%
@@ -44,6 +45,8 @@ function sum_char_codes(n: string) : number {
 The easiest way to tell the Big O complexity is to look for loops
 
 Ask yourself "where do you loop over the input?"
+
+---
 
 #### Dropping constants
 
@@ -79,5 +82,33 @@ So the first example having the constant is more accurate and could be seen as m
 But the second example shows that the constant infront of N isn't relevant because N^2 grows disproportionally faster
 
 In summary, we use Big O to not get the _exact_ time, only the growth of an algorithm and not concern ourselves with what unit of measurement we're using like CPUs
+
+---
+
+#### Worst case measurement
+
+In this following example the function terminates when it encounters a capital E
+This would still be O(N) because we often consider the _worst case_
+It could be that you'd have to go through the entire string
+Or if E were to be in the second last place it could be considered O(N - 2) but we _drop all constants_
+
+```
+function sum_char_code (n: string) : number {
+    let sum = 0
+
+    for(let i = 0; i < n.length; i++) {
+        const charCode = n.charCodeAt(i)
+
+        // 69 === E
+        if(charCode === 69) {
+            return sum
+        }
+
+
+        sum+= charCode
+    }
+}
+
+```
 
 ---
