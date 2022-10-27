@@ -2,6 +2,8 @@
 
 For now just some scrambled notes, will reformat later.
 
+---
+
 ### Big O
 
 #### Important
@@ -10,7 +12,8 @@ For now just some scrambled notes, will reformat later.
 - Drop constants
 
 Big O notation is a generalized way of understanding how your algorithm will react to your input
-Another way of saying Big O is: As your input grows, how fast does computation (performance) or memory grow
+Another way of saying Big O is:
+As your input grows, how fast does computation (performance) or memory grow
 
 If someone says your algorithm is O of N, denoted as, O(n) - that would mean your algorithm scales linearly based on its input
 The N in O(n) refers to the input size
@@ -39,6 +42,7 @@ function sum_char_codes(n: string) : number {
 ```
 
 The easiest way to tell the Big O complexity is to look for loops
+
 Ask yourself "where do you loop over the input?"
 
 #### Dropping constants
@@ -62,7 +66,7 @@ function sum_char_codes(n: string) : number {
 ```
 
 In this example you might say this is O(2N) since it loops the input twice and that is true but -
-the reason we drop constants is we care about the _growth_ of the algorithm.
+the reason we drop constants is we want a general approximation relating to the _growth_ of the algorithm.
 
 While the constant maybe practical, eventually that constant becomes irrelevant to measure the time complexity
 
