@@ -160,3 +160,17 @@ function sum_char_code (n: string) : number {
 ##### O(log n)
 
 - Binary search tree
+
+---
+
+#### Search Algorithms
+
+---
+
+##### Linear Search
+
+Linear search is what the indexOf method does under the hood
+It's walking through each array item and seeing if X item is the index we are looking for
+
+This is a O(n) operation because it grows equally with the array growth as in -
+If the array grows by 10, you'd have to loop 10 more times (worst case scenario)
