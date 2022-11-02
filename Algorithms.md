@@ -22,6 +22,8 @@ The N in O(n) refers to the input size.
 
 We use Big O to help decide which data structure and algorithm to use since we can calculate their performance.
 
+Question yourself if your data set is ordered, if it is you have new advantages you can take (use other algorithms)
+
 ---
 
 #### Growth is with respect to input
@@ -174,3 +176,25 @@ It's walking through each array item and seeing if X item is the index we are lo
 
 This is a O(n) operation because it grows equally with the array growth as in -
 If the array grows by 10, you'd have to loop 10 more times (worst case scenario)
+
+##### Binary Search
+
+Can be used in an ordered data set
+
+You can half the array an X amount of times to eventually reach the value you're looking for
+
+This is a _O(log(n)) operation_
+
+---
+
+Example:
+
+Array of 4096 -> 2048 -> 1024 -> 512 -> 256 -> 128 -> 64 -> 32 -> 16 -> 8 -> 4 -> 2 -> 1
+
+This would be log(4096) = 12 // O(log(n))
+
+So 12 halvings before reaching the value in this example, a log(n) amount of halving
+
+And again this example is the _worst case scenario_
+
+---
