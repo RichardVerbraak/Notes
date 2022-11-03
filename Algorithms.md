@@ -187,7 +187,7 @@ This is a _O(log(n)) operation_
 
 ---
 
-Example:
+###### Theoretical Example
 
 Array of 4096 -> 2048 -> 1024 -> 512 -> 256 -> 128 -> 64 -> 32 -> 16 -> 8 -> 4 -> 2 -> 1
 
@@ -198,3 +198,62 @@ So 12 halvings before reaching the value in this example, a log(n) amount of hal
 And again this example is the _worst case scenario_
 
 ---
+
+###### Code Example
+
+If the number is the same as the value on the midpoint
+
+- return true
+
+Else if the number is higher than midpoint value
+
+- start checking from midpoint + 1 index (we know midpoint isnt the value from the first check) to end
+
+Else if the number is lower than midpoint value
+
+- set our midpoint as our high to then check in between low and high again
+
+Repeat this while we can still halve the array (low < high)
+
+```
+function bs_list(haystack: number[], needle: number): boolean {
+    // Start of array
+    let low = 0;
+
+    // End of array
+    let high = haystack.length;
+
+    do {
+        const midpoint = Math.floor(low + (high - low) / 2);
+
+        // Value of midpoint
+        const value = haystack[midpoint];
+
+        // If the number is the same as the value on the midpoint
+        //   -> return true
+
+        // Else if the number is higher than midpoint value
+        //   -> start checking from midpoint + 1 index (we know midpoint isnt the value from the first check) to end
+
+        // Else if the number is lower than midpoint value
+        //   -> set our midpoint as our high to then check in between low and high again
+
+        // Do this while our low < high
+        if (needle === value) {
+            return true;
+        } else if (needle > value) {
+            low = midpoint + 1;
+        } else if (needle < value) {
+            high = midpoint;
+        }
+    } while (low < high);
+
+    return false;
+}
+```
+
+---
+
+##### Tips
+
+If the input halves at each step, it's likely O(LogN) or O(NLogN)
