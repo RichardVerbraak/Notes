@@ -177,6 +177,8 @@ It's walking through each array item and seeing if X item is the index we are lo
 This is a O(n) operation because it grows equally with the array growth as in -
 If the array grows by 10, you'd have to loop 10 more times (worst case scenario)
 
+---
+
 ##### Binary Search
 
 Can be used in an ordered data set
@@ -251,6 +253,31 @@ function bs_list(haystack: number[], needle: number): boolean {
     return false;
 }
 ```
+
+###### Two Crystal Balls Problem
+
+When given two crystal balls that will break if dropped from a high enough distance, determine the exact spot in which it will break.
+
+You can look at this problem as an array full of falses until it starts being true.
+If you drop the ball from a 100-story building you could imagine it like:
+const stories = [false, false, false, false, true, true, true, etc.]
+
+This array is also ordered which means you can use Binary Search but...
+
+Imagine jumping the middle of the array and it's true, one of the balls just broke!
+
+So now all that's left is linearly walking from the last good point until we hit the bad point
+Which is walking from the start to the midpoint (again, worst case)
+So linearly from point [0] to the midpoint of N -> O(1/2 of N) -> dropping constant -> O(N)
+
+What's left is to jump in a way that isn't a portion of N to again walk that portion of N - i.e what we did before this
+
+The solution is to jump the Square Root of N an amount of times until the ball breaks
+If it breaks, you have to jump backwards to the last known good point
+And then walk forward, which at most is... the Sqrt(N)
+
+The running time of this would be, worst case, which is if you have to jump back and walk forward -- O(Sqrt(n) + Sqrt(n))
+Which could be written as 2Sqrt(N) but you can drop the 2 so it'll be just O(Sqrt(n))
 
 ---
 
