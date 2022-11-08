@@ -225,22 +225,13 @@ function bs_list(haystack: number[], needle: number): boolean {
     // End of array
     let high = haystack.length;
 
+    // Do the following while our low < high
     do {
         const midpoint = Math.floor(low + (high - low) / 2);
 
         // Value of midpoint
         const value = haystack[midpoint];
 
-        // If the number is the same as the value on the midpoint
-        //   -> return true
-
-        // Else if the number is higher than midpoint value
-        //   -> start checking from midpoint + 1 index (we know midpoint isnt the value from the first check) to end
-
-        // Else if the number is lower than midpoint value
-        //   -> set our midpoint as our high to then check in between low and high again
-
-        // Do this while our low < high
         if (needle === value) {
             return true;
         } else if (needle > value) {
@@ -279,9 +270,21 @@ And then walk forward, which at most is... the Sqrt(N)
 The running time of this would be, worst case, which is if you have to jump back and walk forward -- O(Sqrt(n) + Sqrt(n))
 Which could be written as 2Sqrt(N) but you can drop the 2 so it'll be just O(Sqrt(n))
 
+Summary: To solve this problem _non linearly_, linear as in, jumping by just some portion of N, we can use Sqrt(n)
+
+Why Sqrt and not cubed?
+
+- This would become increasingly smaller jumps the higher N is to the point of becoming almost linear
+
 ---
 
 ###### Code Example
+
+Jump by the square root of N
+
+Loop over the input until ball breaks
+
+Jump back to previous jump and walk forward until value is found
 
 ```
 function two_crystal_balls(breaks: boolean[]): number {
