@@ -254,7 +254,7 @@ function bs_list(haystack: number[], needle: number): boolean {
 }
 ```
 
-###### Two Crystal Balls Problem
+##### Two Crystal Balls Problem
 
 When given two crystal balls that will break if dropped from a high enough distance, determine the exact spot in which it will break.
 
@@ -278,6 +278,45 @@ And then walk forward, which at most is... the Sqrt(N)
 
 The running time of this would be, worst case, which is if you have to jump back and walk forward -- O(Sqrt(n) + Sqrt(n))
 Which could be written as 2Sqrt(N) but you can drop the 2 so it'll be just O(Sqrt(n))
+
+---
+
+###### Code Example
+
+```
+function two_crystal_balls(breaks: boolean[]): number {
+    const jumpAmount = Math.floor(Math.sqrt(breaks.length));
+
+    let breakPoint;
+    let previousJump;
+
+    // Start at jumping point
+    // Keep jumping until ball breaks
+    for (let i = jumpAmount; i < breaks.length; i += jumpAmount) {
+        if (breaks[i] === true) {
+            breakPoint = i;
+            previousJump = breakPoint - jumpAmount;
+            break;
+        }
+    }
+
+    // If statement is so TypeScript doesn't yell about vars being undefined
+
+    // Start at previous jumping point
+    // Walk forward until our determined breaking point
+    // Return the index when found
+    if (breakPoint && previousJump) {
+        for (let j = previousJump; j < breakPoint; j++) {
+            if (breaks[j] === true) {
+                return j;
+            }
+        }
+    }
+
+    // False if not found
+    return -1;
+}
+```
 
 ---
 
