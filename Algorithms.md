@@ -361,6 +361,29 @@ And to solve this more easily you can just say: 101 \* 50
 Which you can abstract to: N + 1 \* (N/2)
 In this example, 5050 will be the answer to the sum of all the numbers between that range
 
+As another example to see the direct correlation
+
+[5,4,3,2,1]
+[4,5,3,2,1] 1
+[4,3,5,2,1] 2
+[4,3,2,5,1] 3
+[4,3,2,1,5] 4
+[3,4,2,1] 5
+[3,2,4,1] 6
+[3,2,1] 7
+[2,3,1] 8
+[2,1] 9
+[1] 10
+
+In total, 10 iterations.
+
+Size of N = 5
+N x (N - 1) / 2
+5 x (5 - 1) / 2 = 10
+
+In Big O terms, which drops constants
+N x (N - 1) / 2 becomes N x (N) which is O(N^2)
+
 ---
 
 ##### Tips
