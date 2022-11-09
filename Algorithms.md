@@ -245,6 +245,8 @@ function bs_list(haystack: number[], needle: number): boolean {
 }
 ```
 
+---
+
 ##### Two Crystal Balls Problem
 
 When given two crystal balls that will break if dropped from a high enough distance, determine the exact spot in which it will break.
@@ -320,6 +322,24 @@ function two_crystal_balls(breaks: boolean[]): number {
     return -1;
 }
 ```
+
+---
+
+#### Search Algorithms
+
+---
+
+##### Bubble Sort
+
+The mathy way of saying an array is sorted if every Xi <= Xi + 1
+Xi meaning every "ith" position in X array, so X[i] (index)
+
+Bubble sort starts at the 0th position and goes to the end of the array
+It looks at the index next to it and says "if _I'm larger_ than you, we _swap position_"
+
+[1, 3, 7, 4, 2] after _one_ iteration will become [1, 3 , 4, 2, 7]
+Meaning the largest item will _always_ be at the last spot after an iteration
+And in the next iteration we don't have to go to the last spot because that is already sorted
 
 ---
 
