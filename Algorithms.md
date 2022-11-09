@@ -337,9 +337,29 @@ Xi meaning every "ith" position in X array, so X[i] (index)
 Bubble sort starts at the 0th position and goes to the end of the array
 It looks at the index next to it and says "if _I'm larger_ than you, we _swap position_"
 
-[1, 3, 7, 4, 2] after _one_ iteration will become [1, 3 , 4, 2, 7]
-Meaning the largest item will _always_ be at the last spot after an iteration
-And in the next iteration we don't have to go to the last spot because that is already sorted
+[1, 3, 7, 4, 2] after _one_ iteration will become [1, 3, 4, 2, 7]
+Meaning the largest item will _always_ be at the last index after an iteration
+And in the next iteration we don't have to go to the last index because that is already sorted
+
+This will continue on until there's only _one spot left_ in the array which means the entire array is sorted
+
+If you look closely there's a pattern within this algorithm
+[1, 3, 7, 4, 2] = N
+[1, 3, 4, 2] = N - 1
+[1, 3, 2] = N - 2
+[1, 2] = N - N + 1
+
+This also resembles the following (lecture talks about a story where a kid, Gauss, has to add up numbers between 1 and 100)
+
+1...100 = 101
+2...99 = 101
+3...98 = 101
+...
+50...51 = 101
+
+And to solve this more easily you can just say: 101 \* 50
+Which you can abstract to: N + 1 \* (N/2)
+In this example, 5050 will be the answer to the sum of all the numbers between that range
 
 ---
 
