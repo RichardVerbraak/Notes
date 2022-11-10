@@ -382,7 +382,25 @@ N x (N - 1) / 2
 5 x (5 - 1) / 2 = 10
 
 In Big O terms, which drops constants
-N x (N - 1) / 2 becomes N x (N) which is O(N^2)
+N x (N - 1) / 2 becomes N x N which is O(N^2)
+
+---
+
+###### Code Example
+
+```
+function bubble_sort(arr: number[]): void {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+```
 
 ---
 
