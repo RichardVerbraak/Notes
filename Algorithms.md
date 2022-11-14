@@ -388,6 +388,17 @@ N x (N - 1) / 2 becomes N x N which is O(N^2)
 
 ###### Code Example
 
+The outer loop loops over the entire array
+And the inner loop will do the comparison + swap for each item in the array
+
+The comparison checks if the current index is greater than the next one, if so swap
+Which results in the biggest element in the array _bubbling up_ to the last index after _one_ iteration
+This is why we have an inner loop so we do multiple iterations for the items in the array --
+
+For performance we don't check the last index because we already know the highest number is already at the end
+
+Another way of saying the array is sorted is: if J is greater than arr.length - i - 1
+
 ```
 function bubble_sort(arr: number[]): void {
     for (let i = 0; i < arr.length; i++) {
