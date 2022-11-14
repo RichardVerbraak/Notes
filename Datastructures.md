@@ -61,6 +61,9 @@ You can't just "get" the ith element in a list
 You'll have to start at the _head_ of the linked list and then walk to the element you wanted to return
 
 (A) -> (B) -> (C) -> (D)
+This is called a singly linked list because A points to B and B points to C -- you can't walk backwards
+The moment you go forward, if you don't have a ref to what's behind you, it's gone
+If the head would point to (B) here, no one could access (A)
 
 If you would define this as a type in TypeScript it would look like:
 
