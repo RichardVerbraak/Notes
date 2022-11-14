@@ -396,6 +396,8 @@ Which results in the biggest element in the array _bubbling up_ to the last inde
 This is why we have an inner loop so we do multiple iterations for the items in the array --
 
 For performance we don't check the last index because we already know the highest number is already at the end
+Hence the "- i" in the for loop
+We also have "- 1" because we're accounting for [j + 1], else we can go out of bounds of the array
 
 Another way of saying the array is sorted is: if J is greater than arr.length - i - 1
 
