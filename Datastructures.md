@@ -122,3 +122,27 @@ And now to point (D) to (B)
 Deletion is also a O(1) operation
 It does not matter how big or small the list is
 The computer will go into memory to said node and will only need (B) + (C) + (D) to delete
+
+###### Time / Space complexity
+
+- Prepending / Appending
+  Getting the head and tail of a linked list is constant since we have a defined pointer to that, so inserting at the start or end is fast
+
+- Insertion / Deletion from the middle
+  The operation itself is fast but depending on how big the list is, traversing it can be slow
+
+Summary: Linked Lists are fast for doing operations at both ends but _could_ be very slow if you were to traverse to the middle to do said operation
+
+The API for a LinkedList in TypeScript:
+
+```
+interface LinkedList<T> {
+  get length(): number;
+  insertAt(item: T, index: number): void;
+  remove(item: T): T | undefined;
+  removeAt(index: number); T | undefined;
+  append(item: T): void;
+  prepend(item: T): void;
+  get(index: number): T | undefined;
+}
+```
