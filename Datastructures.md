@@ -67,8 +67,31 @@ If the head would point to (B) here, no one could access (A)
 
 If you would define this as a type in TypeScript it would look like:
 
+Singly linked list
+
+---
+
 ```
 Node<T>
   val: T
   nextNode?: Node<T>
 ```
+
+Doubly Linked List
+
+---
+
+```
+Node<T>
+  val: T
+  nextNode?: Node<T>
+  prevNode?: Node<T>
+```
+
+A cool property of linked lists is that insertion / deletion can be very fast
+
+(A) <-> (B) <-> (C) <-> (D)
+
+If you would insert (F) between (A) and (B)
+All you'd need to do is to point A to F and B to F while pointing (F) to both
+(A) <-> (F) <-> (B)
