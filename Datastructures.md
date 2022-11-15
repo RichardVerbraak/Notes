@@ -90,8 +90,35 @@ Node<T>
 
 A cool property of linked lists is that insertion / deletion can be very fast
 
+###### Insertion
+
+---
+
+Inserting F into:
+
 (A) <-> (B) <-> (C) <-> (D)
 
 If you would insert (F) between (A) and (B)
 All you'd need to do is to point A to F and B to F while pointing (F) to both
 (A) <-> (F) <-> (B)
+
+None of these operations are based on how many nodes are in a linked list
+So basically, setting "Next" could be assumed that it is constant time --- O(1)
+
+###### Deletion
+
+---
+
+Deleting (C) from:
+
+(A) <-> (B) <-> (C) <-> (D)
+
+From (C), take previous node (B)
+(B).next = (C).next
+And now to point (D) to (B)
+(D).prev = (C).prev
+(C).prev = (C).next = null
+
+Deletion is also a O(1) operation
+It does not matter how big or small the list is
+The computer will go into memory to said node and will only need (B) + (C) + (D) to delete
