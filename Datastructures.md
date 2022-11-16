@@ -90,7 +90,7 @@ Node<T>
 
 A cool property of linked lists is that insertion / deletion can be very fast
 
-###### Insertion
+#### Insertion
 
 ---
 
@@ -105,7 +105,7 @@ All you'd need to do is to point A to F and B to F while pointing (F) to both
 None of these operations are based on how many nodes are in a linked list
 So basically, setting "Next" could be assumed that it is constant time --- O(1)
 
-###### Deletion
+#### Deletion
 
 ---
 
@@ -123,7 +123,7 @@ Deletion is also a O(1) operation
 It does not matter how big or small the list is
 The computer will go into memory to said node and will only need (B) + (C) + (D) to delete
 
-###### Time / Space complexity
+#### Time / Space complexity
 
 - Prepending / Appending
   Getting the head and tail of a linked list is constant since we have a defined pointer to that, so inserting at the start or end is fast
@@ -146,3 +146,28 @@ interface LinkedList<T> {
   get(index: number): T | undefined;
 }
 ```
+
+---
+
+## Queue
+
+---
+
+A queue is a Datastructure build on top of a Linked List
+
+You can think of it like a First in / First out operation (FIFO)
+So like getting back into the end of a line at for example, a carnival ride
+
+If you were to insert (E) at the end of the following _singly linked list_:
+
+(A) -> (B) -> (C) -> (D) (E)
+
+You can point the tail.next to (E) and then set tail to (E)
+
+Now if you want to set (B) to be the head, you'd do the reverse
+
+First you temporarily store the current head (A)
+Set head to head.next which is (B)
+Then set the original head.next to null in order to "break the link"
+
+These are all O(1) operations
