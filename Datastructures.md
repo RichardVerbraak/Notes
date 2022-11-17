@@ -171,3 +171,69 @@ Set head to head.next which is (B)
 Then set the original head.next to null in order to "break the link"
 
 These are all O(1) operations
+
+---
+
+###### Code Example of Queue as Class
+
+```
+type Node<T> = {
+    value: T;
+    nextNode?: Node<T>;
+};
+
+export default class Queue<T> {
+    public length: number;
+    private head?: Node<T>;
+    private tail?: Node<T>;
+
+    constructor() {
+        this.head = undefined;
+        this.tail = undefined;
+        this.length = 0;
+    }
+
+    // Add
+    enqueue(item: T): void {
+        const node = { value: item } as Node<T>;
+
+        this.length++;
+
+        // If there is no tail, meaning there aren't any items and thus also no head
+        // Set our tail and head to point to the new node
+        // Basically creating an array (list rather) with 1 item
+        if (!this.tail) {
+            this.tail = this.head = node;
+            return;
+        }
+
+        // Set the nextNode of the current tail to our new node
+        this.tail.nextNode = node;
+
+        // Set current tail to be said new node
+        this.tail = node;
+    }
+
+    // Pop
+    deque(): T | undefined {
+        if (!this.head) {
+            return undefined;
+        }
+
+        this.length--;
+
+        const head = this.head;
+        this.head = this.head.nextNode;
+
+        // Don't have to this since JS uses a "garbage collector" to free up the space itself
+        head.nextNode = undefined;
+
+        return this.head?.value;
+    }
+
+    // Get
+    peek(): T | undefined {
+        return this.head?.value;
+    }
+}
+```
