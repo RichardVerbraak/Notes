@@ -225,7 +225,7 @@ export default class Queue<T> {
         const head = this.head;
         this.head = this.head.nextNode;
 
-        // Don't have to this since JS uses a "garbage collector" to free up the space itself
+        // Don't have to do this since JS uses a "garbage collector" to free up the space itself
         head.nextNode = undefined;
 
         return this.head?.value;
@@ -237,3 +237,30 @@ export default class Queue<T> {
     }
 }
 ```
+
+---
+
+## Stack
+
+---
+
+A stack is a queue but in reverse
+It looks and acts like a queue
+Is a singly linked list which you can only add or remove from the head
+
+(D) being the head
+
+(A) <- (B) <- (C) <- (D)
+
+If you wanted to add (E) you would do:
+
+(E).next = head
+head.prev = E?
+
+Removing (E) would be:
+
+head = (E).next
+head.prev = null?
+
+A stack only allows pushing and popping from one side which makes it a really fast operation
+And again the running time for this is still O(1) since we're just pointing to other values
