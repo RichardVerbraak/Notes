@@ -324,3 +324,58 @@ export default class Stack<T> {
 ```
 
 ---
+
+## Arrays vs Linked List
+
+---
+
+Usability
+
+- Arrays
+
+  - Good
+    Can access random indices
+    Easy to just allocate memory and set the values
+
+  - Bad
+    No literal insert, you can only overwrite
+    Manually have to write a for loop to set an indices to null for deletion
+
+- Linked List
+
+  - Good
+
+    - Can push and pop really easily from the head and tail
+
+  - Bad
+    - Not as easy to access nodes
+    - Cumbersome to create a linked list and connect all of the nodes
+
+Time
+
+- Arrays
+
+  - O(1) for every operation (overwriting, accessing, deleting)
+
+- Linked List
+
+  - Always has linear search since you have to walk through all the nodes, can't just jump in the middle
+  - Fast with push/pop
+
+Space
+
+- Arrays
+
+  - Set amount of memory
+
+- Linked List
+
+  - Memory usage more optimized since it's not a pre-defined amount
+
+Contrived use case for a Linked List:
+
+If you didn't want to have more than 5 async/await requests happening at the same time -
+you'd have to pull of the front and push in the new as the older requests complete.
+
+This is basically a queue problem and using an array here wouldn't be optimal because you'd
+have to shift/unshift all the indices around vs just using the head/tail in a Linked List.
