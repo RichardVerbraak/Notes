@@ -264,3 +264,63 @@ head.prev = null?
 
 A stack only allows pushing and popping from one side which makes it a really fast operation
 And again the running time for this is still O(1) since we're just pointing to other values
+
+---
+
+###### Code Example of Stack as Class
+
+```
+type Node<T> = {
+    value: T;
+    next?: Node<T>;
+};
+
+export default class Stack<T> {
+    public length: number;
+    private head?: Node<T>;
+
+    constructor() {
+        this.length = 0;
+        this.head = undefined;
+    }
+
+    push(item: T): void {
+        const node = { value: item } as Node<T>;
+
+        this.length++;
+
+        if (!this.head) {
+            this.head = node;
+            return;
+        }
+
+        node.next = this.head;
+        this.head = node;
+    }
+
+    pop(): T | undefined {
+        if (!this.head) {
+            return undefined;
+        }
+
+        // A <- B <- C
+
+        this.length--;
+
+        const head = this.head;
+
+        // Point head to the next one (C points to B)
+        this.head = head.next;
+
+        // In another langue you'd usually free up the space the previous head was using
+
+        return head.value;
+    }
+
+    peek(): T | undefined {
+        return this.head?.value;
+    }
+}
+```
+
+---
