@@ -158,7 +158,7 @@ A queue is a Datastructure build on top of a Linked List
 You can think of it like a First in / First out operation (FIFO)
 So like getting back into the end of a line at for example, a carnival ride
 
-If you were to insert (E) at the end of the following _singly linked list_:
+If you were to append (E) at the end of the following _singly linked list_:
 
 (A) -> (B) -> (C) -> (D) (E)
 
@@ -255,12 +255,12 @@ Is a singly linked list which you can only add or remove from the head
 If you wanted to add (E) you would do:
 
 (E).next = head
-head.prev = E?
+head = E
 
-Removing (E) would be:
-
-head = (E).next
-head.prev = null?
+Removing and returning (E) would be:
+currentHead = head (E)
+head = currentHead.next
+return currentHead
 
 A stack only allows pushing and popping from one side which makes it a really fast operation
 And again the running time for this is still O(1) since we're just pointing to other values
@@ -379,3 +379,52 @@ you'd have to pull of the front and push in the new as the older requests comple
 
 This is basically a queue problem and using an array here wouldn't be optimal because you'd
 have to shift/unshift all the indices around vs just using the head/tail in a Linked List.
+
+---
+
+## ArrayList
+
+---
+
+An ArrayList has _array access_ and the _ability to grow_ like a list
+
+Example:
+
+An array with the length of 1 but the capacity of 3
+
+[2, null, null]
+
+Get(index)
+If it's out of bounds
+if(index >= arr.length) throw Error
+
+Push operation
+If the length is within the capacity, push the item
+if(length =< arr.capacity) push(item)
+
+Pushing when length = capacity
+Create a new array with for example, double the capacity (6)
+
+An ArrayList technically starts off with an array structure since you start off by giving it a hint -
+"Hey how much space do you want to use and not allocate too much memory"
+It comes down to a game of reserving the least amount of memory while also doing the least amount of growing operations
+
+What about Queue like operations (Enqueue and Queue)
+
+Enqueue (insert at front) example:
+
+Length: 3
+Capacity: 6
+
+[2, 3, 5, null, null, null]
+
+The problem here would be that you can't just "write" at index[0] because you will overwrite the value 2 here
+So what you'll have to start at 5 and shift everything by 1 to the right side so [0] will be empty to insert our value into
+
+This is a O(n) operation and not performant which is why people would use a node based list instead of an array for these operations
+
+So to summarize, an ArrayList is bad with queue and dequeue but good with push / pop, the latter being O(1)
+
+Same with removing at an index, if you were to jump into the middle and remove an item,
+you'd have to shift all the items that came after that index in order to fill the "gap" you created
+Doing a get(index) and it returning null instead of an item because you didn't shift things would be problematic
